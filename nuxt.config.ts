@@ -13,7 +13,7 @@ export default defineNuxtConfig({
     '@nuxt3/apollo-module',
   ],
   graphqlCodegen: {
-    schema: ['http://localhost:3000/api/graphql', `${process.env.URL}/api/graphql`],
+    schema: ['http://localhost:3000/api/graphql'],
   },
   apollo: {
     clientConfigs: {
