@@ -1,4 +1,3 @@
-
 import {
   Resolver, Query, Arg,
 } from 'type-graphql'
@@ -11,13 +10,12 @@ export default class PersonResolver {
     () => Person,
     // { nullable: true }
   )
-  person(
-  @Arg('personInput', () => PersonInput) personInput: PersonInput,
-  ) {
+  person(@Arg('personInput', () => PersonInput) personInput: PersonInput) {
     const personData = {
       'Phil Xu': {
         name: 'Phil Xu',
-        tags: ['Developer', 'China'],
+        tags: ['Developer', 'ABC'],
+        tags2: ['Developer', 'VN'],
       },
     }
     return personData[personInput.name]

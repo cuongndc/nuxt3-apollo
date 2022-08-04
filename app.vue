@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import 'virtual:svg-icons-register'
 useMeta({
   title: 'Nuxt3 + Apollo Starter',
   meta: [
@@ -16,10 +15,5 @@ setPreferredLanguage()
 <template>
   <main class="py-20 px-10 text-center">
     <NuxtPage />
-    <Footer />
   </main>
 </template>
-
-<style>
-@import '~/styles/main.css';
-</style>

@@ -1,4 +1,3 @@
-
 import {
   Field, InputType, ObjectType,
 } from 'type-graphql'
@@ -16,4 +15,7 @@ export class Person {
 
   @Field(() => [String], { nullable: 'itemsAndList' })
     tags?: string[]
+
+  @Field(() => [String], { nullable: 'itemsAndList' })
+    tags2?: string[]
 }
